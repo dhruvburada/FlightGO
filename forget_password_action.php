@@ -48,14 +48,14 @@ if (isset($_POST['btn'])) {
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'archilgajera203@gmail.com'; // Your Gmail email
-                $mail->Password = 'gkig eiqt lwtf vzvh'; // Your Gmail password
+                $mail->Username = 'SMTP EMAIL'; // Your SMTP Email
+                $mail->Password = 'SMTP PASSWORD'; // Your SMTP password
                 $mail->SMTPSecure = 'ssl';
                 $mail->Port = 465;
                 $mail->SMTPDebug = 2;
                 
                 // Set sender and recipient
-                $mail->setFrom('archilgajera203@gmail.com', 'Archil Gajera'); // Your name and email
+                $mail->setFrom('Sender Email', 'Sender Name'); 
                 $mail->addAddress($email);
                 
                 // Email content
