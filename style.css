@@ -1,0 +1,13 @@
+
+  /* Styles for smooth hover effects */
+.nav-item:hover .nav-link {
+  transition: all 0.3s ease;
+  background-color: #007bff; /* Change this to your desired hover color */
+}
+
+/* Style for active page */
+.nav-item.active .nav-link {
+  background-color: #007bff; /* Change this to your desired active page color */
+  color: #fff; /* Change this to your desired text color for active page */
+}
+
