@@ -233,13 +233,13 @@ if (isset($_POST['submit'])) {
           $mail->isSMTP(); // Set mailer to use SMTP
           $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
           $mail->SMTPAuth = true; 
-          $mail->Username = 'ironbins001@gmail.com'; // SMTP username
-          $mail->Password = 'ngcp wksc ygwu jkkd'; // SMTP password
+          $mail->Username = 'Add your SMTP Username/Email'; // SMTP username
+          $mail->Password = 'Add SMTP password'; // SMTP password
           $mail->SMTPSecure = "ssl";
           $mail->Port = 465; // TCP port to connect to
           $mail->SMTPDebug = 2;
           // Recipients
-          $mail->setFrom('ironbins001@gmail.com', 'Dhruv Burada'); // Sender's email address and name
+          $mail->setFrom('Sender Email', 'Sender  Name'); // Sender's email address and name
           $mail->addAddress($em, $fn); // Recipient's email address and name
           
           // Attachments
