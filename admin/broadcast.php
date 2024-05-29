@@ -31,8 +31,8 @@ if (isset($_POST['submit'])  && isset($_POST['message'])) {
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'archilgajera203@gmail.com'; // Your Gmail email
-                    $mail->Password = 'gkig eiqt lwtf vzvh'; // Your Gmail password
+                    $mail->Username = 'SMTP Email/Username'; // Your SMTP email
+                    $mail->Password = 'SMTP Password'; // Your SMTP password
                     $mail->SMTPSecure = "ssl";
                     $mail->Port = 465;
                     $mail->SMTPDebug = 0;
@@ -41,7 +41,7 @@ if (isset($_POST['submit'])  && isset($_POST['message'])) {
                     $mail->Subject = $subject;
                     $mail->Body = $body;
 
-                    $mail->setFrom('archilgajera203@gmail.com', 'Archil '); // Sender's email and name
+                    $mail->setFrom('Sender Email', 'Sender Name '); // Sender's email and name
                     $mail->addAddress($to_email); // Recipient email
                     $mail->Subject = 'Notification';
                     $mail->Body = $_POST['message']; // Body of the email
